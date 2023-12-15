@@ -1,0 +1,21 @@
+{
+	"name": "www-scrollapp-org",
+	"author": "Paul Gordon",
+	"version": "1.0.0",
+	"license": "MIT",
+	"scripts": {
+		"serve": "cd site && npx vite --no-cors"
+	},
+	"straw": {
+		"out": "site",
+		"static": "static",
+		"images": "."
+	},
+	"dependencies": {
+		"@scrollapp/rawjs": "^1.3.4",
+		"strawjs": "^1.0.5"
+	},
+	"devDependencies": {
+		"@types/node": "^20.10.4"
+	}
+}

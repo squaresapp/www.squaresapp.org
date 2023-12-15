@@ -5,11 +5,12 @@ const css: (string | Raw.Style)[] = [
 		boxSizing: "border-box",
 		margin: 0,
 		padding: 0,
-		fontFamily: "Inter",
+		fontFamily: "inherit",
 	},
 	"BODY", {
 		color: "white",
-		backgroundColor: "black"
+		backgroundColor: "black",
+		fontFamily: "Inter",
 	},
 	".width", {
 		margin: "auto",
@@ -45,6 +46,9 @@ const css: (string | Raw.Style)[] = [
 		fontWeight: 900,
 		textDecoration: "none",
 		color: "white",
+	},
+	".button:focus", {
+		outline: 0,
 	},
 	".button-blue", {
 		backgroundColor: "hsl(205, 100%, 50%)",

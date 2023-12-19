@@ -12,9 +12,11 @@ const css: (string | Raw.Style)[] = [
 		backgroundColor: "black",
 		fontFamily: "Inter",
 	},
-	".width", {
-		margin: "auto",
-		maxWidth: "1000px",
+	"SECTION", {
+		marginLeft: "auto",
+		marginRight: "auto",
+		paddingLeft: "3vw",
+		paddingRight: "3vw",
 	},
 	".left", {
 		textAlign: "left",
@@ -72,7 +74,8 @@ function red(text: TemplateStringsArray)
 	return raw.span("red", raw.text(text[0]));
 }
 
-css.push(".red", { color: "hsl(345, 100%, 50%)" });
+const redColor = "hsl(345, 100%, 50%)";
+css.push(".red", { color: redColor });
 
 /** */
 function blue(text: TemplateStringsArray)
@@ -80,7 +83,8 @@ function blue(text: TemplateStringsArray)
 	return raw.span("blue", raw.text(text[0]));
 }
 
-css.push(".blue", { color: "hsl(205, 100%, 50%)" });
+const blueColor = "hsl(205, 100%, 50%)";
+css.push(".blue", { color: blueColor });
 
 /** */
 function b(text: TemplateStringsArray)
@@ -106,8 +110,8 @@ function text(textSize: number, boxWidth?: number):
 {
 	return (tsa, ...items) => raw.p(
 		"text",
-		{ fontSize: textSize + "px", },
-		!!boxWidth && { maxWidth: boxWidth + "em" },
+		{ fontSize: textSize + "vw", },
+		!!boxWidth && { maxWidth: boxWidth + "vw" },
 		raw.text(tsa, ...items)
 	);
 }
@@ -155,13 +159,13 @@ namespace button
 			"store-button apple-button",
 			{
 				href: "#",
-				backgroundImage: `url(${straw.image("button-app-store")})`,
+				backgroundImage: `url(button-app-store)`,
 			},
 		);
 	}
 	
 	css.push(".apple-button", {
-		backgroundImage: `url(${straw.image("button-app-store")})`,
+		backgroundImage: `url(button-app-store)`,
 	});
 	
 	/** */
@@ -171,13 +175,13 @@ namespace button
 			"store-button play-button",
 			{
 				href: "#",
-				backgroundImage: `url(${straw.image("button-play-store")})`,
+				backgroundImage: `url(button-play-store)`,
 			},
 		);
 	}
 	
 	css.push(".play-button", {
-		backgroundImage: `url(${straw.image("button-play-store")})`,
+		backgroundImage: `url(button-play-store)`,
 	});
 	
 	/** */
@@ -241,7 +245,7 @@ css.push(
 	".paragraph", {
 		lineHeight: 1.5,
 		fontWeight: 400,
-		color: "#B3B3B3",
+		color: "#AAA",
 	},
 	".paragraph B", {
 		fontWeight: 900,

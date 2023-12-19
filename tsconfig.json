@@ -1,6 +1,6 @@
 {
 	"compilerOptions": {
-		"outFile": "+build/scrollapp.js",
+		"outFile": "+build/squaresapp.js",
 		"composite": true,
 		"module": "system",
 		"moduleResolution": "node",
@@ -26,7 +26,7 @@
 	},
 	"include": [
 		"core/**/!.ts",
-		"node_modules/@scrollapp/rawjs/*.ts",
+		"node_modules/@squaresapp/rawjs/*.ts",
 		"node_modules/strawjs/*.ts",
 		"core/**/*.ts",
 		"core/**/*.tsx"

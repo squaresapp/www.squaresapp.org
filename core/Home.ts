@@ -1,22 +1,23 @@
 
-page("/", "Scroll: A Way Forward",
+page("/", "Squares: Programmable Social Media",
 	
 	raw.section(
 		space(100),
 		
-		text(50, 17)`
-			Capture the ${red`excitement`} of social,
-			the ${blue`independence`} of email, ${br()}
-			and the ${red`power`} of a website.
+		text(5, 80)`
+			Capture the ${red`energy`} of social,
+			the ${blue`independence`} of email,${br()}
+			and the ${red`power`} of a website,${br()}
+			in ${blue`one`} channel.
 		`,
 		space(50),
 		
 		p(25)`
-			Scroll is an ${b`open-source`} app for consuming
+			Squares is an ${b`open-source`} app for consuming
 			${b`Webfeeds`}&#8212;a radical open media format that's
-			reshaping the ${b`future internet`}.
+			ready to reshape the ${b`future internet`}.
 		`,
-		space(50),
+		space(70),
 		button.ios(),
 		button.android(),
 		
@@ -24,7 +25,7 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(110)`
+		text(10, 84)`
 			Today's media channels have
 			${red`lots`} of ${red`issues`}.
 		`,
@@ -32,8 +33,8 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(110)`Social Media`,
-		text(40, 18)`
+		text(10)`Social Media`,
+		text(4, 73)`
 			Where you ${blue`grow`} 📈. But you often
 			get ${red`lost`} in the ${red`noise`} 😱. There's tons
 			of ${red`rules`} 👮🏻‍♀️ and ${red`restrictions`} 😡. And
@@ -43,8 +44,8 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(110)`Email`,
-		text(40)`
+		text(10)`Email`,
+		text(4, 73)`
 			It's ${blue`personalizable`} 🤙🏻 + ${blue`open tech`} 👍🏻.${br()}
 			Your list is ${blue`yours`} 💪🏻. But it's ${red`old`} and${br()}
 			${red`crusty`} 👎🏻. And there's Gmail's${br()}
@@ -54,17 +55,19 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(110)`Websites`,
-		text(40)`
+		text(10)`Websites`,
+		text(4, 70)`
 			They're easy to ${blue`monetize`} 💰.${br()}
 			Freedom to ${blue`do anything`} 🌈. But it's${br()}
 			${red`super hard`} to get people to ${red`visit`} 😢.
 		`,
+		space(300),
 		dots(),
+		space(300)
 	),
 	
 	section(
-		text(110)`
+		text(8, 70)`
 			We need a new
 			${blue`media channel`}
 			where you can
@@ -75,12 +78,12 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(140)`Introducing ${br()} Webfeeds`,
+		text(10)`Introducing ${br()} Webfeeds`,
 		dots()
 	),
 	
 	section(
-		text(70, 11)`
+		text(7, 80)`
 			${blue`Webfeeds`} are just ${blue`web pages`} that ${blue`push`}
 			to your audience ${blue`automatically`}.
 		`,
@@ -88,18 +91,17 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	raw.section(
-		text(70, 11)`
+		text(7, 80)`
 			${blue`Webfeeds`} come to followers via an app.
-			Like ${red`Scroll`}.
+			Like ${red`Squares`}.
 		`,
 		space(800)
 	),
 	
 	raw.section(
 		align.right,
-		text(70, 11)`
-			${red`Scroll`} folds ${blue`webfeeds`} into a ${blue`visual timeline`}.
-			Like Instagram.
+		text(7, 60)`
+			${red`Squares`} folds ${blue`webfeeds`} into a visual ${blue`timeline`}.
 		`,
 		space(800),
 		dots(),
@@ -107,7 +109,7 @@ page("/", "Scroll: A Way Forward",
 	
 	raw.section(
 		align.left,
-		text(70)`
+		text(7)`
 			Webfeed ${blue`pages`} are ${blue`carousels`} build with the
 			${blue`native language`} of the web: ${red`HTML`} and ${red`CSS`}.
 		`,
@@ -121,16 +123,16 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(100)`Designed to be ${blue`reshared`}.`,
+		text(10)`Designed to be ${blue`reshared`}.`,
 		space(50),
 		p(30)`Webfeeds don't need to be limited to your own carousels. Like any ${b`social network`}, they can reshare carousels from other webfeeds. They form a ${b`decentralized network`} where ${b`communal resharing`} is baked in.`,
 		space(200),
 	),
 	
 	section(
-		text(110)`${red`Nobody`} wants to ${blue`say`} this, but...`,
+		text(10, 83)`${red`Nobody`} wants to ${blue`say`} this, but...`,
 		space(150),
-		text(60, 12)`Pay-to-reshare is a ${red`cheat code`} to ${blue`exploding`} on social media.`,
+		text(6, 75)`Pay-to-reshare is a ${red`cheat code`} to ${blue`exploding`} on social media.`,
 		space(150),
 		p(37)`
 			The ${b`fastest way`} to ${b`grow on Twitter`} (and others) is to create good content, and then pay bigger accounts for reshares. Platforms ${b`hate this`}. They want you to buy their ads. But webfeeds are an ${b`escape hatch`} from ${b`ad-peddling overlords`}. So go after those resharing deals with fellow webfeeders, and ${b`grow`} your ${b`webfeed following`} to your hearts content. 
@@ -141,7 +143,7 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(100, 8)`Webfeeds can be ${blue`algorithms`}.`,
+		text(10, 80)`Webfeeds can be ${blue`algorithms`}.`,
 		space(50),
 		p(33)`
 			There are ${b`no rules`} around how webfeeds come to life. They could be a stream of reshared pages, ${b`generated`} by an algorithm, and personalized to your interests. There is an ${b`open market`} for webfeeds which are actually content recommendation algorithms. And a growing swarm of algorithms looking to reshare your content.
@@ -149,7 +151,7 @@ page("/", "Scroll: A Way Forward",
 		space(100),
 		raw.div(
 			align.left,
-			text(40, 18)`
+			text(4, 65)`
 				Are you an ${blue`algorithm developer`}?
 				There is big ${red`profit potential`} in ${br()}
 				AI-generated webfeeds.
@@ -161,7 +163,7 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(80)`Attract swarms of scrapers looking to ${blue`promote you`} for ${red`free`}.`,
+		text(8)`Attract swarms of scrapers looking to ${blue`promote you`} for ${red`free`}.`,
 		space(100),
 		p(30)`
 			${b`Scraper bots are your friends`}. They redistribute your content to places you don't expect. They're an unpaid marketing force.
@@ -175,8 +177,8 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		raw.img({ src: straw.image("webfeeds-in-box") }),
-		text(70, 13)`${blue`Webfeeds`} are ${blue`open`} tech. Anyone can make a tool ${red`like Scroll`} to view them`,
+		raw.img({ src: "webfeeds-in-box" }),
+		text(7, 90)`${blue`Webfeeds`} are ${blue`open`} tech. Anyone can make a tool ${red`like Squares`} to view them`,
 		space(100),
 		p(23)`
 			Are you a ${b`developer`}? If you know ${b`HTML`}, you already know how to build Webfeeds.
@@ -188,13 +190,13 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(70, 13)`${blue`Webfeeds`} are the ultimate technology for ${red`engaging`} your ${red`followers`}.`,
+		text(7, 90)`${blue`Webfeeds`} are the ultimate technology for ${red`engaging`} your ${red`followers`}.`,
 		space(100),
 		p(35)`
 			Imagine the engagement rates of having an ${b`appointment booker`} within a LinkedIn post, a ${b`donation button`} in an Instagram story, a ${b`podcast`} in an email, or a ${b`3D game`} in a Tweet. And imagine having all this ${b`personalizable`} for each of your followers.
 		`,
 		p(35)`
-			All this and more is possible with webfeeds. And because they follow the principle of ${b`no centralized services`}, you are the ${b`owner of the system`}, free from anyone imposing their will onto you.
+			All this and more is possible with webfeeds. Social media platforms will ${b`never allow you to do things like this`}, because doing so could compromise their ability to keep uesrs ${b`scrolling`} and ${b`addicted`}.
 		`,
 		space(100),
 		button.blue("See Webfeed Examples", ""),
@@ -202,7 +204,7 @@ page("/", "Scroll: A Way Forward",
 	),
 	
 	section(
-		text(90)`
+		text(9)`
 			It's time for a${br()}
 			${red`radical reformation`}${br()}
 			of social media.
@@ -212,28 +214,35 @@ page("/", "Scroll: A Way Forward",
 			Social media has done great things for civilization. But its darker side is a ${b`cancerous force`}. Platforms treat humans like cows to be milked for their time and attention, and actively ${b`stifle innovation`}. They could easily build webfeed-like power into their products. But they won't, because they exist to ${b`sell ads`} rather than ${b`spur greatness`}.
 		`,
 		space(80),
-		text(60, 8)`Is doesn't need to be this way.`,
+		text(6, 50)`Is doesn't need to be this way.`,
 		space(80),
 		p(36)`
-			Scroll and Webfeeds are ${b`open-source initiatives`} that are on track to reignite greatness within humans. A great future is where we build our ${b`own digital identities`} on our ${b`own digital properties`}. Let's ignite the counter-force against an increasingly medival feudalist-style internet.
+			Squares and Webfeeds are ${b`open-source initiatives`} that are on track to reignite greatness within humans. A great future is where we build our ${b`own digital identities`} on our ${b`own digital properties`}. Let's create the counter-force against an increasingly medival feudalist-style internet.
 		`,
 		dots(),
 	),
 	
 	section(
-		text(70, 12)`
+		text(7, 90)`
 			Let's ${blue`exit serfdom`} and
 			enter a new land where
 			${blue`digital independence`}
-			reigns ${red`supreme`}.`
-		,
+			reigns ${red`supreme`}.`,
+		
 		space(60),
-		p()`Download ${b`Scroll`} and get started today.`,
+		p()`Download ${b`Squares`} and get started today.`,
 		space(60),
 		button.ios(),
 		button.android(),
-		space(500),
-	)
+		space(200),
+	),
+	
+	footer(),
+	
+	githubCorner("https://github.com/squaresapp/squares")
 );
 
-setTimeout(() => straw.emit());
+setTimeout(() =>
+{
+	straw.emit();
+});

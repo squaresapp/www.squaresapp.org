@@ -33,7 +33,7 @@
 				"type": "node",
 				"request": "launch",
 				"cwd": "${workspaceFolder}",
-				"program": "${workspaceFolder}/+build/scrollapp.js",
+				"program": "${workspaceFolder}/+build/squaresapp.js",
 				"sourceMaps": true,
 			}
 		]

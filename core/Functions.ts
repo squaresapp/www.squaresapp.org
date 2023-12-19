@@ -38,22 +38,18 @@ namespace Fn
 	/**
 	 * Returns the email address in a format that is invisible to spam bots.
 	 */
-	export function maskEmail(email: string)
+	export function maskEmail(anchorId: string, email: string)
 	{
-		const id = "a" + Math.random().toString().slice(5);
 		const emailParts = email.split("@");
-		
-		return [
-			raw.a({ id, href: "#" }),
-			raw.script(raw.text(`
-				window.addEventListener("DOMContentLoaded", () =>
-				{
-					const a = document.getElementById("${id}");
-					const at = String.fromCharCode(64);
-					a.href = "mailto:${emailParts[0]}" + at + "${emailParts[1]}";
+		return raw.script(raw.text(`
+			window.addEventListener("DOMContentLoaded", () =>
+			{
+				const a = document.getElementById("${anchorId}");
+				const at = String.fromCharCode(64);
+				a.href = "mailto:${emailParts[0]}" + at + "${emailParts[1]}";
+				if (a.textContent === "")
 					a.textContent = "${emailParts[0]}" + at + "${emailParts[1]}";
-				});
-			`))
-		];
+			});
+		`));
 	}
 }

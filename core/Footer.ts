@@ -21,7 +21,8 @@ function footer()
 				raw.img("office", { src: "res.office" }),
 				raw.h2(raw.text("Contact")),
 				raw.p(
-					Fn.maskEmail("hello@squaresapp.org"),
+					raw.a({ id: "footer-email-link", href: "#" }),
+					Fn.maskEmail("footer-email-link", "hello@squaresapp.org"),
 					raw.br(),
 					raw.a({ href: "tel:1-289-455-8099" },raw.text("+1 (289) 455-8099")),
 				),

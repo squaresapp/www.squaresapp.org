@@ -157,7 +157,10 @@ page("/", "Squares: Programmable Social Media",
 				AI-generated webfeeds.
 			`,
 			space(50),
-			button.blue("Contact us to learn more.", "")
+			raw.get(button.blue("Contact us to learn more.", ""))(
+				{ id: "contact-us-link" }
+			),
+			Fn.maskEmail("contact-us-link", "hello@squaresapp.org")
 		),
 		dots(),
 	),

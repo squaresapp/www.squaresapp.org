@@ -46,10 +46,13 @@ namespace Fn
 		return [
 			raw.a({ id, href: "#" }),
 			raw.script(raw.text(`
-				const a = document.getElementById("${id}");
-				const at = String.fromCharCode(64);
-				a.href = "mailto:${emailParts[0]}" + at + "${emailParts[1]}";
-				a.textContent = "${emailParts[0]}" + at + "${emailParts[1]}";
+				window.addEventListener("DOMContentLoaded", () =>
+				{
+					const a = document.getElementById("${id}");
+					const at = String.fromCharCode(64);
+					a.href = "mailto:${emailParts[0]}" + at + "${emailParts[1]}";
+					a.textContent = "${emailParts[0]}" + at + "${emailParts[1]}";
+				});
 			`))
 		];
 	}

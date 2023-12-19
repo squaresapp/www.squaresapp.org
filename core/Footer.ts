@@ -51,7 +51,7 @@ function footer()
 							raw.img({ src: "res.social-twitter", title: "Twitter" })
 						),
 						raw.a(
-							{ href: "https://github.com/scrollapp/scroll" },
+							{ href: "https://github.com/squaresapp/scroll" },
 							raw.img({ src: "res.social-github", title: "GitHub" })
 						),
 						raw.a(

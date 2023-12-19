@@ -43,15 +43,15 @@ function footer()
 				raw.div("bottom",
 					raw.p("social",
 						raw.a(
-							{ href: "https://www.instagram.com/getscroll" },
+							{ href: "https://www.instagram.com/thesquaresapp" },
 							raw.img({ src: "res.social-instagram", title: "Instagram" })
 						),
 						raw.a(
-							{ href: "https://www.twitter.com/getscroll" },
+							{ href: "https://www.twitter.com/thesquaresapp" },
 							raw.img({ src: "res.social-twitter", title: "Twitter" })
 						),
 						raw.a(
-							{ href: "https://github.com/squaresapp/scroll" },
+							{ href: "https://github.com/squaresapp/squares" },
 							raw.img({ src: "res.social-github", title: "GitHub" })
 						),
 						raw.a(

@@ -55,7 +55,7 @@ function footer()
 							raw.img({ src: "res.social-github", title: "GitHub" })
 						),
 						raw.a(
-							{ href: "https://www.linkedin.com/company/85439136/admin/feed/posts/" },
+							{ href: "https://www.linkedin.com/company/squaresapp/" },
 							raw.img({ src: "res.social-linkedin", title: "LinkedIn" })
 						),
 					),

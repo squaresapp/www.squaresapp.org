@@ -4,7 +4,8 @@
 	"version": "1.0.0",
 	"license": "MIT",
 	"scripts": {
-		"serve": "cd site && npx vite --no-cors"
+		"serve": "cd site && npx vite --no-cors",
+		"build": "npm install && tsc && node ./+build/squaresapp.js"
 	},
 	"straw": {
 		"out": "site",
@@ -17,6 +18,7 @@
 		"strawjs": "^1.0.14"
 	},
 	"devDependencies": {
-		"@types/node": "^20.10.4"
+		"@types/node": "^20.10.4",
+		"typescript": "^5.3.3"
 	}
 }

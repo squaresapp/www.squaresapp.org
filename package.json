@@ -13,9 +13,9 @@
 		"images": "."
 	},
 	"dependencies": {
-		"@squaresapp/rawjs": "^1.3.5",
+		"@squaresapp/rawjs": "^1.3.7",
 		"prismjs": "^1.29.0",
-		"strawjs": "^1.0.14"
+		"strawjs": "^1.0.15"
 	},
 	"devDependencies": {
 		"@types/node": "^20.10.4",

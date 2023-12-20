@@ -65,7 +65,7 @@ function footer()
 						red`&#10084;`,
 						raw.text(" in Canada"),
 						raw.br(),
-						raw.a({ href: "/privacy"}, raw.text("Privacy Policy"))
+						raw.a({ href: "/privacy/"}, raw.text("Privacy Policy"))
 					),
 				),
 			)

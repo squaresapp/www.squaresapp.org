@@ -240,8 +240,6 @@ page("/", "Squares: Programmable Social Media",
 		space(200),
 	),
 	
-	footer(),
-	
 	githubCorner("https://github.com/squaresapp/squares")
 );
 

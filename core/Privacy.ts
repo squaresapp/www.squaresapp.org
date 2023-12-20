@@ -4,13 +4,14 @@
 	
 	page("/privacy", "Privacy Policy",
 		raw.style(
-			"aSECTION", {
+			"SECTION:not(.footer)", {
 				maxWidth: "1024px",
 				margin: "auto",
 				paddingLeft: "min(2vw, 50px)",
 				paddingRight: "min(2vw, 50px)",
 				paddingBottom: "2rem",
 				display: "flex",
+				lineHeight: 1.66,
 			},
 			"sSECTION.last", {
 				paddingBottom: "100px",
@@ -28,6 +29,14 @@
 			},
 			".header-section HR", {
 				marginTop: "5rem",
+			},
+			".policy-section > DIV:first-child", {
+				width: "66%",
+				paddingRight: "20px",
+			},
+			".policy-section > DIV:last-child", {
+				width: "33%",
+				paddingLeft: "20px",
 			},
 			/*
 			@media screen and (min-width: 600px) {
@@ -50,7 +59,10 @@
 				marginTop: "2rem",
 				fontWeight: 700,
 				fontSize: "1.5rem",
-			}
+			},
+			"OL", {
+				paddingLeft: "1.5em",
+			},
 		),
 		
 		raw.section("header-section",

@@ -114,6 +114,9 @@ namespace Fn
 			height: "5px",
 			borderRadius: "10px",
 			backgroundColor: "hsl(180, 0%, 30%)",
+		},
+		".iphone-wrapper > :first-child", {
+			borderRadius: "50px",
 		}
 	);
 }

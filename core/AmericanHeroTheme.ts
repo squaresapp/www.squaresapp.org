@@ -256,13 +256,16 @@ css.push(
 );
 
 /** */
-function space(pixels: number)
+function space(pixels: number): HTMLDivElement;
+function space(unit: string): HTMLDivElement
+function space(amount: number | string)
 {
-	const cls = "space-" + pixels;
+	const val = typeof amount === "string" ? amount : amount + "px";
+	const cls = "space-" + amount.toString();
 	const selector = "." + cls;
 	
 	if (!css.includes(selector))
-		css.push(selector, { paddingTop: pixels + "px" });
+		css.push(selector, { paddingTop: val });
 	
 	return raw.div(cls);
 }

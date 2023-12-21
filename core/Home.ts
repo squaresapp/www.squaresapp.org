@@ -21,6 +21,21 @@ page("/", "Squares: Programmable Social Media",
 		button.ios(),
 		button.android(),
 		
+		Fn.iPhone(
+			{
+				position: "absolute",
+				top: "5%",
+				right: "15%",
+				zIndex: -1,
+				transform: "rotate(30deg)"
+			},
+			raw.div(
+				{
+					width: "30vw",
+				}
+			)
+		),
+		space(200),
 		dots(),
 	),
 	

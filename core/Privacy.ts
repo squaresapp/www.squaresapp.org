@@ -13,7 +13,7 @@
 				display: "flex",
 				lineHeight: 1.66,
 			},
-			"sSECTION.last", {
+			"SECTION.last", {
 				paddingBottom: "100px",
 			},
 			".header-section", {

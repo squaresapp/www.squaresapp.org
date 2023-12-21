@@ -215,9 +215,7 @@ function dots(axis: "x" | "y" = "y", count = 4)
 	
 	return raw.div(
 		"dots dots-" + axis,
-		{
-			
-		},
+		{ zIndex: -2 },
 		...sub
 	);
 }

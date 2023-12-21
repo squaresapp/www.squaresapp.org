@@ -285,7 +285,7 @@ page("/", "Squares: Programmable Social Media",
 			{
 				position: "absolute",
 				zIndex: -1,
-				top: 0,
+				top: "-10vw",
 				left: 0,
 				right: 0,
 				height: "100vw",
@@ -294,7 +294,7 @@ page("/", "Squares: Programmable Social Media",
 			Fn.iPhone(
 				{
 					position: "absolute",
-					top: "-10%",
+					top: 0,
 					left: "-16%",
 					zIndex: -1,
 					transform: "rotate(-15deg)",
@@ -310,7 +310,7 @@ page("/", "Squares: Programmable Social Media",
 			Fn.iPhone(
 				{
 					position: "absolute",
-					top: "-10%",
+					top: 0,
 					right: "-16%",
 					zIndex: -1,
 					transform: "rotate(15deg)",

@@ -1,12 +1,44 @@
 
 page("/", "Squares: Programmable Social Media",
 	
+	raw.div(
+		raw.h1(
+			{
+				padding: "100px",
+				paddingBottom: 0,
+				fontSize: "5vw",
+			},
+			raw.text("Squares")
+		),
+		raw.div({
+			position: "absolute",
+			top: "-110px",
+			left: 0,
+			right: 0,
+			height: "500px",
+			backgroundColor: "hsl(0, 0%, 8%)",
+			zIndex: -1,
+			transform: "skewY(-10deg)",
+		}),
+		raw.div({
+			position: "absolute",
+			top: "-360px",
+			left: 0,
+			right: 0,
+			height: "500px",
+			backgroundColor: "hsl(0, 0%, 12%)",
+			zIndex: -1,
+			transform: "skewY(-30deg)",
+		}),
+	),
+	
 	raw.section(
-		space(100),
 		{
 			overflow: "hidden",
+			paddingLeft: "38vw",
 		},
-		raw.get(text(5, 80)`
+		space(100),
+		raw.get(text(4, 58)`
 			Capture the ${red`energy`} of social,
 			the ${blue`independence`} of email,${br()}
 			and the ${red`power`} of a website,${br()}
@@ -16,9 +48,9 @@ page("/", "Squares: Programmable Social Media",
 		}),
 		space(50),
 		
-		p(15)`
-			Squares is an ${b`open-source`} app for consuming
-			${b`Webfeeds`}, a radical open media format that's
+		p(23)`
+			${b`Squares`} is an ${b`open-source`} app for consuming
+			Webfeeds, a radical open media format that's
 			ready to reshape the ${b`future internet`}.
 		`,
 		space(70),
@@ -28,19 +60,22 @@ page("/", "Squares: Programmable Social Media",
 		Fn.iPhone(
 			{
 				position: "absolute",
-				top: "30vw",
-				left: "450px",
+				top: 0,
+				left: "-10%",
 				zIndex: -1,
+				transform: "rotate(-5deg)",
+				transformOrigin: "100% 100%",
 			},
 			raw.img(
 				{
 					src: "res.hero.webfeed",
-					width: "33vw",
+					width: "45vw",
 				}
 			)
 		),
-		space("40vw"),
+		space("20vw"),
 		dots(),
+		space("30vw"),
 	),
 	
 	section(

@@ -280,6 +280,50 @@ page("/", "Squares: Programmable Social Media",
 	),
 	
 	section(
+		
+		raw.div(
+			{
+				position: "absolute",
+				zIndex: -1,
+				top: 0,
+				left: 0,
+				right: 0,
+				height: "100vw",
+				overflow: "hidden"
+			},
+			Fn.iPhone(
+				{
+					position: "absolute",
+					top: "-10%",
+					left: "-16%",
+					zIndex: -1,
+					transform: "rotate(-15deg)",
+					transformOrigin: "100% 100%",
+				},
+				raw.img(
+					{
+						src: "res.hero.webfeed",
+						width: "35vw",
+					}
+				)
+			),
+			Fn.iPhone(
+				{
+					position: "absolute",
+					top: "-10%",
+					right: "-16%",
+					zIndex: -1,
+					transform: "rotate(15deg)",
+					transformOrigin: "0 100%",
+				},
+				raw.img(
+					{
+						src: "res.hero.webfeed",
+						width: "35vw",
+					}
+				)
+			),
+		),
 		text(7, 90)`
 			Let's ${blue`exit serfdom`} and
 			enter a new land where
@@ -292,6 +336,8 @@ page("/", "Squares: Programmable Social Media",
 		button.ios(),
 		button.android(),
 		space(200),
+		
+		
 	),
 	
 	githubCorner("https://github.com/squaresapp/squares")

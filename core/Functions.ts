@@ -119,4 +119,52 @@ namespace Fn
 			borderRadius: "50px",
 		}
 	);
+	
+	/**
+	 * 
+	 */
+	export function quoteBubble(tsa: TemplateStringsArray, ...items: (string | HTMLElement)[])
+	{
+		return raw.blockquote(
+			"bubble",
+			raw.text(tsa, ...items),
+			raw.span("point")
+		);
+	}
+	
+	css.push(
+		".bubble", {
+			padding: "50px",
+			borderRadius: "35px",
+			lineHeight: "1.25",
+			fontSize: "40px",
+			fontWeight: "900",
+			color: "white",
+			backgroundColor: "#171E27",
+		},
+		".bubble::before, .bubble::after", {
+			fontFamily: "Georgia, 'Times New Roman', Times, serif",
+			position: "absolute"
+		},
+		".bubble:before", {
+			content: `"\\201C"`,
+			marginLeft: "-0.6em",
+		},
+		".bubble:after", {
+			content: `"\\201D"`,
+			marginLeft: "0.1em",
+		},
+		".bubble .point", {
+			position: "absolute",
+			marginTop: "40px",
+			display: "block",
+			width: "0",
+			height: "0",
+			borderStyle: "solid",
+			borderWidth: "0 50px 50px 0",
+			borderBottomWidth: "50px",
+			borderColor: "transparent",
+			borderRightColor: "#171E27",
+		}
+	);
 }

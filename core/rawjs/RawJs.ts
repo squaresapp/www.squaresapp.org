@@ -19,10 +19,10 @@ page("/rawjs", "RawJS: Make document.createElement() Great Again",
 		}
 	),
 	section(
-		space(100),
-		raw.img({ src: "rawjs.logo" }),
+		space(200),
+		raw.img({ src: "rawjs.logo", width: "50vw" }),
+		space(200),
 		
-		space(75),
 		text(5, 75)`
 			A library that makes
 			${blue`document.createElement()`}

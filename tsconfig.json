@@ -25,10 +25,10 @@
 		]
 	},
 	"include": [
-		"core/**/!.ts",
+		"source/**/!.ts",
 		"node_modules/@squaresapp/rawjs/*.ts",
 		"node_modules/strawjs/*.ts",
-		"core/**/*.ts",
-		"core/**/*.tsx"
+		"source/**/*.ts",
+		"source/**/*.tsx"
 	]
 }

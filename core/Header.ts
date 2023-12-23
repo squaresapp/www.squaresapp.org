@@ -19,7 +19,6 @@ function page(path: string, title: string, ...params: Straw.PageParam[])
 		}),
 		...params,
 		
-		
 		// This will get hoisted to the top,
 		// but it must be at the bottom so
 		// that any params can execute any

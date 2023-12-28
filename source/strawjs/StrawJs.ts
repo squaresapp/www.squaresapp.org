@@ -119,7 +119,7 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 				zIndex: -1
 			}),
 		),
-		p(30)`
+		p(23)`
 			StrawJS uses the ultra-fast rust-based ${b`Photon`} library for ${b`on-the-fly`} image processing. It generates size, crop, and effects variations from source images according to your specs, and ${b`auto-resolves`} file extensions and source paths.
 		`,
 		Fn.colorTypescript(`
@@ -151,5 +151,7 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 			${b`StrawJS`} is being used to support a number of production websites, ${b`including this one`}. It's also the official library for creating webfeeds, which is the foundational technology that powers the content in ${b`Squares`}, a funded social media technology app.
 		`,
 		space(150)
-	)
+	),
+	
+	githubCorner("https://github.com/squaresapp/strawjs")
 );

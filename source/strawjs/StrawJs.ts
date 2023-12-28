@@ -147,8 +147,8 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 	
 	section(
 		text(10)`${blue`Maintained`}.`,
-		p(30)`
-			${b`StrawJS`} is being used to support a number of production websites. ${b`You're looking at one of them`}. It's also the official library for creating ${b`webfeeds`}, which is the foundational technology that powers the content in ${b`Squares`}, a funded social media technology app.
+		p(27)`
+			${b`StrawJS`} is being used to support a number of production websites, ${b`including this one`}. It's also the official library for creating webfeeds, which is the foundational technology that powers the content in ${b`Squares`}, a funded social media technology app.
 		`,
 		space(150)
 	)

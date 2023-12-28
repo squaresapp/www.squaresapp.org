@@ -139,7 +139,7 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 	
 	section(
 		text(15)`${red`Fast`}.`,
-		p(30)`
+		p(24)`
 			When your entire website is readily-executable ${b`JavaScript code`}, you avoid the weight and bloat caused by preprocessors that have to deal with parsing and transformation.
 		`,
 		space(150),

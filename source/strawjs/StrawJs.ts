@@ -39,8 +39,8 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 			)
 		),
 		space(80),
-		p(30)`
-			${b`StrawJS`} StrawJS is a new approach to static site generation. StrawJS allows your entire website to be a ${b`runnable block of JavaScript`} that leverages the powerful ergonomics found in RawJS. StrawJS isn't another pile of plugins, preprocessors, and configuration. Rather&#8212;it's a lightweight static site generation ${b`library`}.
+		p(31)`
+			${b`StrawJS`} is a new approach to static site generation. StrawJS allows your entire website to be a ${b`runnable block of JavaScript`} that leverages the powerful ergonomics found in RawJS. StrawJS isn't another pile of plugins, preprocessors, and configuration. Rather&#8212;it's a lightweight static site generation ${b`library`}.
 		`,
 		Fn.colorPlain(`$ npx strawjs init`),
 		Fn.colorTypescript(`

@@ -131,7 +131,9 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 				raw.img({ src: "my-image?width=300,gray" })
 			);
 		`),
-		button.blue("See all image processing options", ""),
+		button.blue(
+			"See all image processing options",
+			"https://github.com/squaresapp/straw/blob/main/readme.md"),
 		space(200),
 	),
 	

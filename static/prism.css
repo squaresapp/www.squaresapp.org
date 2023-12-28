@@ -1,5 +1,9 @@
-code[class*=language-], pre[class*=language-]
+pre[class*=language-]
 {
+	padding: 1em;
+	padding-top: 3.5em;
+	margin: 0.5em 0;
+	overflow: auto;
 	color: white;
 	background: rgba(255, 255, 255, 0.1);
 	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.15));
@@ -37,14 +41,6 @@ pre[class*=language-]:before
 	left: 0;
 	right: 0;
 	color: rgba(255, 255, 255, 0.3);
-}
-
-pre[class*=language-]
-{
-	padding: 1em;
-	padding-top: 3.5em;
-	margin: 0.5em 0;
-	overflow: auto;
 }
 
 :not(pre)>code[class*=language-]

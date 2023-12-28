@@ -7,15 +7,10 @@
 		"serve": "cd site && npx vite --no-cors",
 		"build": "npm install && tsc && node ./+build/squaresapp.js"
 	},
-	"straw": {
-		"out": "site",
-		"static": "static",
-		"images": "."
-	},
 	"dependencies": {
-		"@squaresapp/rawjs": "^1.3.8",
+		"@squaresapp/rawjs": "^1.3.12",
 		"prismjs": "^1.29.0",
-		"strawjs": "^1.0.17"
+		"strawjs": "^1.1.9"
 	},
 	"devDependencies": {
 		"@types/node": "^20.10.4",

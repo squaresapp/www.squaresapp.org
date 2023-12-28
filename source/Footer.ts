@@ -73,64 +73,64 @@ function footer()
 	]
 }
 
-	// Footer
-	css.push(
-		".footer", {
-			overflow: "hidden",
-			fontSize: "20px",
-			lineHeight: 1.66,
-		},
-		".footer:before", {
-			content: `""`,
-			position: "absolute",
-			zIndex: -1,
-			top: 0,
-			left: "-100%",
-			bottom: 0,
-			right: 0,
-			backgroundColor: "hsl(0, 0%, 10%)",
-			transform: "rotateZ(-10deg)",
-			transformOrigin: "100% 0"
-		},
-		".footer *", {
-			fontSize: "inherit",
-		},
-		".footer A", {
-			color: "inherit",
-		},
-		".footer H2", {
-			color: blueColor,
-			textTransform: "uppercase",
-			fontWeight: 700
-		},
-		".footer > DIV", {
-			paddingTop: "25vw",
-			margin: "auto",
-			maxWidth: "800px",
-		},
-		".footer IMG.office", {
-			maxWidth: "500px",
-			float: "right",
-			zIndex: 1,
-			borderRadius: "6px",
-			boxShadow: "0 5px 7px rgba(0, 0, 0, 0.4)",
-		},
-		".footer .bottom", {
-			display: "flex",
-			clear: "both",
-			padding: "10px 0 50px",
-		},
-		".footer .bottom > *", {
-			flex: "1 0",
-		},
-		".footer .blessing", {
-			textAlign: "right",
-		},
-		".footer .social", {
-			paddingTop: "100px",
-		},
-		".footer .social IMG", {
-			width: "50px",
-			marginRight: "20px",
-		}
+// Footer
+css.push(
+	".footer", {
+		overflow: "hidden",
+		fontSize: "20px",
+		lineHeight: 1.66,
+	},
+	".footer:before", {
+		content: `""`,
+		position: "absolute",
+		zIndex: -1,
+		top: 0,
+		left: "-100%",
+		bottom: 0,
+		right: 0,
+		backgroundColor: "hsl(0, 0%, 10%)",
+		transform: "rotateZ(-10deg)",
+		transformOrigin: "100% 0"
+	},
+	".footer *", {
+		fontSize: "inherit",
+	},
+	".footer A", {
+		color: "inherit",
+	},
+	".footer H2", {
+		color: blueColor,
+		textTransform: "uppercase",
+		fontWeight: 700
+	},
+	".footer > DIV", {
+		paddingTop: "25vw",
+		margin: "auto",
+		maxWidth: "800px",
+	},
+	".footer IMG.office", {
+		maxWidth: "500px",
+		float: "right",
+		zIndex: 1,
+		borderRadius: "6px",
+		boxShadow: "0 5px 7px rgba(0, 0, 0, 0.4)",
+	},
+	".footer .bottom", {
+		display: "flex",
+		clear: "both",
+		padding: "10px 0 50px",
+	},
+	".footer .bottom > *", {
+		flex: "1 0",
+	},
+	".footer .blessing", {
+		textAlign: "right",
+	},
+	".footer .social", {
+		paddingTop: "100px",
+	},
+	".footer .social IMG", {
+		width: "50px",
+		marginRight: "20px",
+	}
 );

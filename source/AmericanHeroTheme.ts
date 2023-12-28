@@ -1,5 +1,5 @@
 
-const css: (string | Raw.Style)[] = [
+css.push(
 	"*", {
 		position: "relative",
 		boxSizing: "border-box",
@@ -58,7 +58,7 @@ const css: (string | Raw.Style)[] = [
 	".button-red", {
 		backgroundColor: "hsl(345, 100%, 50%)",
 	},
-];
+);
 
 /** */
 const enum align

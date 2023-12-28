@@ -342,8 +342,3 @@ page("/", "Squares: Programmable Social Media",
 	
 	githubCorner("https://github.com/squaresapp/squares")
 );
-
-setTimeout(() =>
-{
-	straw.emit();
-});

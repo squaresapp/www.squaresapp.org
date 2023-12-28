@@ -2,69 +2,6 @@
 namespace Fn
 {
 	/**
-	 * Renders HTML source code with syntax highlighting.
-	 */
-	export function colorHtml(sourceCode: string)
-	{
-		return raw.pre(
-			"one-line",
-			raw.text(sourceCode.replace(/</g, "&lt;"))
-		);
-	}
-	
-	css.push(
-		"PRE.one-line", {
-			margin: "1em",
-			padding: "1em",
-			borderRadius: "20px",
-			backgroundColor: "hsl(360, 0%, 10%)",
-			fontFamily: "Fira Code",
-			textAlign: "left",
-			overflowX: "scroll",
-		}
-	);
-	
-	/**
-	 * Renders TypeScript source code with syntax highlighting.
-	 */
-	export function colorTypescript(sourceCode: string)
-	{
-		return colorSyntax("typescript", sourceCode);
-	}
-	
-	/** */
-	function colorSyntax(language: string, sourceCode:string)
-	{
-		const lines = sourceCode.split("\n");
-		
-		// Remove leading empty lines
-		while (lines[0].trim() === "")
-			lines.shift();
-		
-		// Remove trailing empty lines
-		while (lines[lines.length - 1].trim() === "")
-			lines.pop();
-		
-		// Find tab size
-		let min = 999999;
-		for (const line of lines)
-			min = Math.min(min, line.length - line.trimStart().length);
-		
-		// Remove leading tabs
-		for (let i = -1; ++i < lines.length;)
-			lines[i] = lines[i].slice(min);
-		
-		sourceCode = lines.join("\n");
-		const preElement = raw.pre("language-" + language);
-		preElement.innerHTML = prism.highlight(sourceCode, prism.languages[language], "ts");
-		return preElement;
-	}
-	
-	export const prism = require("prismjs");
-	const loadLanguages = require("prismjs/components/");
-	loadLanguages(["typescript", "html"]);
-	
-	/**
 	 * Returns the email address in a format that is invisible to spam bots.
 	 */
 	export function maskEmail(anchorId: string, email: string)
@@ -167,4 +104,99 @@ namespace Fn
 			borderRightColor: "#171E27",
 		}
 	);
+	
+	/**
+	 * Renders HTML source code with syntax highlighting.
+	 */
+	export function colorHtml(sourceCode: string)
+	{
+		return raw.pre(
+			"one-line",
+			raw.text(sourceCode.replace(/</g, "&lt;"))
+		);
+	}
+	
+	css.push(
+		"PRE.one-line", {
+			margin: "1em",
+			padding: "1em",
+			borderRadius: "20px",
+			backgroundColor: "hsl(360, 0%, 10%)",
+			fontFamily: "Fira Code",
+			textAlign: "left",
+			overflowX: "scroll",
+		}
+	);
+	
+	/**
+	 * Renders TypeScript source code with syntax highlighting.
+	 */
+	export function colorPlain(sourceCode: string)
+	{
+		return colorSyntax("plain", sourceCode);
+	}
+	
+	/**
+	 * Renders TypeScript source code with syntax highlighting.
+	 */
+	export function colorTypescript(sourceCode: string)
+	{
+		return colorSyntax("tsx", sourceCode);
+	}
+	
+	/** */
+	function colorSyntax(language: string, sourceCode:string)
+	{
+		const lines = sourceCode.split("\n");
+		
+		// Remove leading empty lines
+		while (lines[0].trim() === "")
+			lines.shift();
+		
+		// Remove trailing empty lines
+		while (lines[lines.length - 1].trim() === "")
+			lines.pop();
+		
+		// Find tab size
+		let min = 999999;
+		for (const line of lines)
+			min = Math.min(min, line.length - line.trimStart().length);
+		
+		// Remove leading tabs
+		for (let i = -1; ++i < lines.length;)
+			lines[i] = lines[i].slice(min);
+		
+		sourceCode = lines.join("\n").trim();
+		
+		const preElement = raw.pre("language-" + language);
+		preElement.innerHTML = prism.highlight(sourceCode, prism.languages[language], "tsx");
+		
+		for (const element of walkElementTree(preElement))
+			if (element.children.length === 0 && element.textContent)
+				element.textContent = element.textContent.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+		
+		return preElement;
+	}
+	
+	css.push(
+		"PRE[class*=language-]", {
+			margin: "50px auto",
+			maxWidth: "800px",
+		}
+	);
+	
+	export const prism = require("../source/prism.js");
+	
+	/**
+	 * Enumerates through the decendents of the specified container element.
+	 */
+	function * walkElementTree(container: HTMLElement)
+	{
+		yield container;
+		const doc = container.ownerDocument;
+		const walker = doc.createTreeWalker(container, NodeFilter.SHOW_ELEMENT);
+		while (walker.nextNode())
+			if (walker.currentNode instanceof HTMLElement)
+				yield walker.currentNode;
+	}
 }

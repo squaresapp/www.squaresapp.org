@@ -54,6 +54,14 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 			
 			straw.emit();
 		`),
+		p(22)`
+			...then hit the ${b`run and debug`} button in ${raw.span({ whiteSpace: "nowrap" }, t`Visual Studio Code`)}, and your website is built.
+		`,
+		raw.img({
+			src: "straw-run-and-debug",
+			marginTop: "50px",
+			borderRadius: "10px"
+		}),
 		space(200),
 	),
 	

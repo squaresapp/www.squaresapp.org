@@ -162,11 +162,35 @@ syntax.typescript`
 	);
 `,
 
-p`However, from an experience perspective, the developers of StrawJS don't actually use JSX because we find it both more powerful and convenient to use the ${code`raw.element`} syntax with ad-hoc string template functions (in order to shorten common things like the creation of ${code`<p>`} tags). To understand our perspective, it may be helpful to see the original TypeScript source code of this page.`,
+p`However, from an experience perspective, we as the developers of StrawJS don't actually use JSX because we find it both more powerful and convenient to use the ${code`raw.element`} syntax with ad-hoc string template functions (in order to shorten common things like the creation of ${code`<p>`} tags). To understand our perspective, it may be helpful to see the original TypeScript source code of this page.`,
 
 button.blue("See the TypeScript source of this page.", "https://github.com/squaresapp/www.squaresapp.org/blob/main/source/strawjs/StrawJsDocumentations.ts"),
 
 h2`Webfeed Generation`,
+
+p`StrawJS allows you to very easily create and manage webfeeds in order to make your pages discoverable by ${b`webfeed`} readers such as ${a("Squares", "/")}. In order to make a page webfeed-compatible, use the overload of ${code`straw.page()`} that takes a creation date parameter:`,
+
+syntax.typescript`
+	straw.page(
+		"/myfeed/some-feed-post/",
+		new Date("01-20-2024"),
+		
+		// ...
+	);
+`,
+
+p`Then, define a webfeed index by calling ${code`straw.feed()`} method. The path specified in ${code`root`} signals to StrawJS that all pages nested within this path are to be included in the webfeed index, and are to be sorted according to their creation dates. An ${code`index.txt`} file (the webfeed index) is written in the root directory.`,
+
+syntax.typescript`
+	straw.feed({
+		root: "/myfeed/",
+		author: "Paul Gordon",
+		description: "Paul's Webfeed",
+		icon: "avatar.png",
+	});
+`,
+
+button.blue("See Squares to learn about Webfeeds.", "/"),
 
 githubCorner("https://github.com/squaresapp/strawjs"),
 

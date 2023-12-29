@@ -35,9 +35,13 @@ function renderStrawHeader(fontSize: number)
 					right: 0,
 					transformOrigin: "100% 0",
 					backgroundPosition: "100% 0",
+				},
+				" A", {
+					textDecoration: "none",
+					color: "inherit",
 				}
 			),
-			t`Straw${red`JS`}`
+			raw.a({ href: "/strawjs/" }, t`Straw${red`JS`}`)
 		),
 	);
 }

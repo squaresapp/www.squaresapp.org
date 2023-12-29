@@ -1,5 +1,6 @@
 
 page("/strawjs", "StrawJS: A Static Site Generation Library",
+	straw.icon("straw-favicon"),
 	section(
 		space(100),
 		raw.div(
@@ -15,7 +16,7 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 					bottom: 0,
 					width: "40px",
 					transform: "rotate(10deg)",
-					backgroundImage: "url(graphic-straw)",
+					backgroundImage: "url(straw-graphic)",
 					backgroundSize: "contain",
 					backgroundRepeat: "no-repeat",
 					zIndex: 1
@@ -128,7 +129,13 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 				// or another image extension and it will still be found.
 				// The final path in the src attribute will be a path in
 				// StrawJS's output images folder.
-				raw.img({ src: "my-image?width=300,gray" })
+				raw.img({ src: "my-image?w=300,sat=-100" }),
+				
+				// Straw can also create shortcut icons in order to 
+				// quickly create all the correct image sizes, and
+				// generate the necessary <link> tags at the top of
+				// the page.
+				straw.icon("favicon"),
 			);
 		`),
 		button.blue(

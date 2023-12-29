@@ -127,6 +127,6 @@ h2`JSX Usage`,
 
 p`Because RawJS has full support for JSX, so does StrawJS. You're therefore able to construct as much or as little of your website code with the HTML syntax as you like. However, from an experience perspective, the developers of StrawJS don't actually use JSX because we find it both more powerful and convenient to use the ${code`raw.element`} syntax with ad-hoc string template functions (in order to shorten common things like the creation of ${code`<p>`} tags). Though your experience may be different. To understand what we mean, it may be helpful to see the original TypeScript source code of this exact page.`,
 
-button.blue("See the TypeScript source of this page", "")
+button.blue("See the TypeScript source of this page", "https://github.com/squaresapp/www.squaresapp.org/blob/main/source/strawjs/StrawJsDocs.ts")
 
 );

@@ -1,13 +1,18 @@
 
-page("/strawjs", "StrawJS: A Static Site Generation Library",
-	straw.icon("straw-favicon"),
-	section(
-		space(100),
-		raw.div(
+/** */
+function renderStrawHeader(fontSize: number)
+{
+	return raw.div(
+		{
+			padding: "100px 0",
+		},
+		raw.h1(
 			raw.css(
 				"&", {
 					width: "fit-content",
+					margin: "auto",
 					padding: "0 6%",
+					fontSize: fontSize + "vw"
 				},
 				"&:before, &:after", {
 					content: `""`,
@@ -32,14 +37,15 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 					backgroundPosition: "100% 0",
 				}
 			),
-			raw.h1(
-				{
-					fontSize: "15vw"
-				},
-				t`Straw${red`JS`}`
-			)
+			t`Straw${red`JS`}`
 		),
-		space(80),
+	);
+}
+
+page("/strawjs", "StrawJS: A Static Site Generation Library",
+	straw.icon("straw-favicon"),
+	section(
+		renderStrawHeader(15),
 		prose(31)`
 			${b`StrawJS`} is a new approach to static site generation. In StrawJs, your website source code is a ${b`runnable block of JavaScript`} that leverages the powerful ergonomics found in RawJS. StrawJS isn't another pile of plugins, preprocessors, and configuration. Rather, it's a lightweight static site generation ${b`library`}.
 		`,

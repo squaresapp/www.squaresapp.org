@@ -2,6 +2,20 @@
 doc("/strawjs/documentation", "Straw JS Documentation", 
 	straw.icon("straw-favicon"),
 	
+	raw.get(renderStrawHeader(10))(
+		raw.div(
+			{
+				textAlign: "center",
+				fontSize: "22px",
+				fontWeight: 900,
+				textTransform: "uppercase",
+			},
+			raw.text("Documentation")
+		)
+	),
+	
+	h2`Getting Started`,
+	
 	p`In order to start using StrawJS, the first thing you should do is create a fresh directory for your new website, and run this command from within it in the terminal:`,
 
 syntax.plain`npx strawjs init`,
@@ -72,8 +86,6 @@ straw.page("/",
 	raw.img({ src: "my-image" }),
 );
 `,
-
-
 
 p`${b`StrawJS includes image manipulation features`}, such as resizing, cropping, and basic filters. This is powered by the Rust-based image processing library ${a("Photon", "https://silvia-odwyer.github.io/photon/")}. These features are accessed by appending a querystring on to the end of the image file name.`,
 
@@ -156,5 +168,6 @@ button.blue("See the TypeScript source of this page.", "https://github.com/squar
 
 h2`Webfeed Generation`,
 
+githubCorner("https://github.com/squaresapp/strawjs"),
 
 );

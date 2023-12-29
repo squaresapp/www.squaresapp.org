@@ -40,11 +40,11 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 			)
 		),
 		space(80),
-		p(31)`
+		prose(31)`
 			${b`StrawJS`} is a new approach to static site generation. In StrawJs, your website source code is a ${b`runnable block of JavaScript`} that leverages the powerful ergonomics found in RawJS. StrawJS isn't another pile of plugins, preprocessors, and configuration. Rather, it's a lightweight static site generation ${b`library`}.
 		`,
-		Fn.colorPlain(`$ npx strawjs init`),
-		Fn.colorTypescript(`
+		syntax.plain`$ npx strawjs init`,
+		syntax.typescript`
 			require("strawjs");
 			const straw = new Straw.Site();
 			
@@ -53,8 +53,8 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 			);
 			
 			straw.emit();
-		`),
-		p(22)`
+		`,
+		prose(22)`
 			...then hit the ${b`run and debug`} button in ${raw.span({ whiteSpace: "nowrap" }, t`Visual Studio Code`)}, and your website is built.
 		`,
 		raw.img({
@@ -66,34 +66,34 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 	),
 	
 	section(
-		text(5, 60)`${red`Axe`} the pre-processors and use ${blue`JavaScript`} for ${blue`everything`}.`,
+		loud(5, 60)`${red`Axe`} the pre-processors and use ${blue`JavaScript`} for ${blue`everything`}.`,
 		space(50),
-		p(33)`
+		prose(33)`
 			The elegance of ${b`RawJS`} combined with its best-in-class CSS-within-JS feature means you can use JavaScript as your ${b`one language for everything`}. End the hodge-podge of EJS, Handlebars, SASS, LESS, and endless other preprocessors that are all basically less-featured versions of JavaScript. Want something like an HTML import or a CSS @include?  ${b`Make a function and call it`}.
 		`,
-		Fn.colorTypescript(`
+		syntax.typescript`
 			straw.page("/",
 				mySharedHeader(),
 				<h1>Welcome to my website!</h1>,
 				mySharedFooter()
 			);
-		`),
+		`,
 		space(200),
 	),
 	
 	section(
-		text(8, 80)`
+		loud(8, 80)`
 			${red`Code`} your website with the ${red`full power`} of ${blue`JavaScript`}.
 		`,
 		space(50),
-		p(32)`
-			Remember&#8212;StrawJS is a static site generation library, without opinions. Your entire website becomes a ${b`simple emitter function`} written in JavaScript. Step-debugging is a first-class feature. Want some pages to be generated from a database? Just make your emitter function do this. You don't have to worry about plugins or hooking into some API.
+		prose(34)`
+			Remember&#8212;StrawJS is a static site generation library. It allows your website to become a ${b`giant emitter function`} written in JavaScript. Step-debugging is a first-class feature. Want some pages to be generated from a database? Just make your emitter function do this. You don't have to worry about plugins or hooking into some API.
 		`,
 		space(200),
 	),
 	
 	section(
-		text(10, 70)`Image processing ${blue`done`} ${red`right`}.`,
+		loud(10, 70)`Image processing ${blue`done`} ${red`right`}.`,
 		space(50),
 		raw.div(
 			{
@@ -128,10 +128,10 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 				zIndex: -1
 			}),
 		),
-		p(23)`
+		prose(23)`
 			StrawJS uses the ultra-fast rust-based ${b`Photon`} library for ${b`on-the-fly`} image processing. It generates size, crop, and effects variations from source images according to your specs, and ${b`auto-resolves`} file extensions and source paths.
 		`,
-		Fn.colorTypescript(`
+		syntax.typescript`
 			straw.page("/products/my-product", 
 				// "my-image" could be my-image.jpg, my-image.webp,
 				// or another image extension and it will still be found.
@@ -145,7 +145,7 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 				// the page.
 				straw.icon("favicon"),
 			);
-		`),
+		`,
 		button.blue(
 			"See all image processing options",
 			"https://github.com/squaresapp/straw/blob/main/readme.md"),
@@ -153,16 +153,16 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 	),
 	
 	section(
-		text(15)`${red`Fast`}.`,
-		p(24)`
+		loud(15)`${red`Fast`}.`,
+		prose(24)`
 			When your entire website is readily-executable ${b`JavaScript code`}, you avoid the weight and bloat caused by preprocessors that have to deal with parsing and transformation.
 		`,
 		space(150),
 	),
 	
 	section(
-		text(10)`${blue`Maintained`}.`,
-		p(27)`
+		loud(10)`${blue`Maintained`}.`,
+		prose(27)`
 			${b`StrawJS`} is being used to support a number of production websites, ${b`including this one`}. It's also the official library for creating webfeeds, which is the foundational technology that powers the content in ${b`Squares`}, a funded social media technology app.
 		`,
 		space(150)

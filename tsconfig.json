@@ -29,7 +29,7 @@
 		"node_modules/@squaresapp/rawjs/*.ts",
 		"node_modules/strawjs/*.ts",
 		"source/AmericanHeroTheme.ts",
-		"source/Header.ts",
+		"source/Pages.ts",
 		"source/Footer.ts",
 		"source/Fn.ts",
 		"source/**/*.ts",

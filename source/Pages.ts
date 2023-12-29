@@ -38,12 +38,9 @@ function doc(path: string, title: string, ...params: Straw.PageParam[])
 				margin: "auto",
 			},
 			raw.css(
-				" H1", {
-					
-				},
-				" P", {
-					
-				},
+				" .button", {
+					margin: "50px auto",
+				}
 			),
 			...params
 		)

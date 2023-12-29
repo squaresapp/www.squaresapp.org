@@ -65,9 +65,10 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 		`,
 		raw.img({
 			src: "straw-run-and-debug",
-			marginTop: "50px",
+			margin: "50px auto",
 			borderRadius: "10px"
 		}),
+		button.blue("Read the full documentation page", "/strawjs/documentation/"),
 		space(200),
 	),
 	
@@ -95,6 +96,8 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 		prose(34)`
 			Remember&#8212;StrawJS is a static site generation library. It allows your website to become a ${b`giant emitter function`} written in JavaScript. Step-debugging is a first-class feature. Want some pages to be generated from a database? Just make your emitter function do this. You don't have to worry about plugins or hooking into some API.
 		`,
+		space(100),
+		button.blue("Read the full documentation page", "/strawjs/documentation/"),
 		space(200),
 	),
 	
@@ -171,6 +174,11 @@ page("/strawjs", "StrawJS: A Static Site Generation Library",
 		prose(27)`
 			${b`StrawJS`} is being used to support a number of production websites, ${b`including this one`}. It's also the official library for creating webfeeds, which is the foundational technology that powers the content in ${b`Squares`}, a funded social media technology app.
 		`,
+		space(40),
+		button.blue(
+			"Visit the GitHub Repository",
+			"https://github.com/squaresapp/strawjs"
+		),
 		space(150)
 	),
 	

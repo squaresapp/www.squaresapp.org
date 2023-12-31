@@ -1,6 +1,5 @@
 
 page("/", "Squares: Programmable Social Media",
-	
 	raw.div(
 		raw.h1(
 			{
@@ -336,8 +335,6 @@ page("/", "Squares: Programmable Social Media",
 		button.ios(),
 		button.android(),
 		space(200),
-		
-		
 	),
 	
 	githubCorner("https://github.com/squaresapp/squares")

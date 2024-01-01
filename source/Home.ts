@@ -26,6 +26,10 @@ function page2(path: string, title: string, ...params: Straw.PageParam[])
 }
 
 page2("/", "Squares: Programmable Social Media",
+	
+	raw.div({ display: "none" }, raw.text("asdfasdf")),
+	
+	/*
 	raw.div(
 		raw.h1(
 			{
@@ -364,4 +368,5 @@ page2("/", "Squares: Programmable Social Media",
 	),
 	
 	githubCorner("https://github.com/squaresapp/squares")
+	*/
 );

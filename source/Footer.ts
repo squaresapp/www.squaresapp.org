@@ -33,10 +33,6 @@ function footer()
 				raw.div("bottom",
 					raw.p("social",
 						raw.a(
-							{ href: "https://www.instagram.com/thesquaresapp" },
-							raw.img({ src: "res.social-instagram", title: "Instagram" })
-						),
-						raw.a(
 							{ href: "https://www.twitter.com/thesquaresapp" },
 							raw.img({ src: "res.social-twitter", title: "Twitter" })
 						),
@@ -47,6 +43,10 @@ function footer()
 						raw.a(
 							{ href: "https://www.linkedin.com/company/squaresapp/" },
 							raw.img({ src: "res.social-linkedin", title: "LinkedIn" })
+						),
+						raw.a(
+							{ href: "https://www.instagram.com/thesquaresapp" },
+							raw.img({ src: "res.social-instagram", title: "Instagram" })
 						),
 					),
 					raw.p("blessing",

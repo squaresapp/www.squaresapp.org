@@ -6,6 +6,7 @@ function page(path: string, title: string, ...params: Straw.PageParam[])
 		
 		raw.title(title),
 		raw.meta({ charset: "UTF-8" }),
+		raw.meta({ name: "viewport", content: "" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.googleapis.com" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true }),
 		raw.link({ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" }),
@@ -17,8 +18,6 @@ function page(path: string, title: string, ...params: Straw.PageParam[])
 			src: "https://cdn.counter.dev/script.js",
 			data: { id: "a7871322-aef0-45c0-8e10-9b636242c2dc", utcoffset: -5 }
 		}),
-		
-		raw.div({ display: "none" }, raw.text("asdfasdf")),
 		
 		...params,
 		footer()

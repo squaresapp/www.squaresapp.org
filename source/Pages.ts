@@ -18,6 +18,8 @@ function page(path: string, title: string, ...params: Straw.PageParam[])
 			data: { id: "a7871322-aef0-45c0-8e10-9b636242c2dc", utcoffset: -5 }
 		}),
 		
+		raw.div({ display: "none" }, raw.text("asdfasdf")),
+		
 		...params,
 		footer()
 	);

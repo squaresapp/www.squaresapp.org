@@ -1,4 +1,4 @@
 
-page("/", "List Of Webfeeds",
+page("/webfeeds-samples", "List Of Webfeeds",
 	
 );

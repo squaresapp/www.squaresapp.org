@@ -3,17 +3,6 @@
 function footer()
 {
 	return [
-		raw.p(
-			{
-				textAlign: "center",
-				opacity: 0.2,
-				fontWeight: 900,
-				fontSize: "8vw",
-				transform: "rotate(-10deg) translate(-10%) ",
-				transformOrigin: "80% -500%"
-			},
-			raw.text("#digital1776")
-		),
 		raw.section(
 			"footer",
 			raw.div(

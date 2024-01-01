@@ -6,7 +6,7 @@ function page(path: string, title: string, ...params: Straw.PageParam[])
 		
 		raw.title(title),
 		raw.meta({ charset: "UTF-8" }),
-		raw.meta({ name: "viewport", content: "" }),
+		//raw.meta({ name: "viewport", content: "width=device-width, initial-scale=1" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.googleapis.com" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true }),
 		raw.link({ rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" }),

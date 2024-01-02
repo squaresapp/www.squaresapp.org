@@ -1,6 +1,6 @@
 
 page("/", "Squares: Programmable Social Media",
-	
+	raw.meta({ name: "og:image", content: "https://www.squaresapp.org/static/res.ogimage.jpg" }),
 	raw.div(
 		raw.h1(
 			{

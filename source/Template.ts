@@ -1,11 +1,12 @@
 
 /** */
-function page(path: string, title: string, ...params: Straw.PageParam[])
+function page(path: string, titleText: string, ...params: Straw.PageParam[])
 {
 	straw.page(path,
-		
-		raw.title(title),
+			
+		...title(titleText),
 		raw.meta({ charset: "UTF-8" }),
+		raw.meta({ name: "og:type", content: "article" }),
 		//raw.meta({ name: "viewport", content: "width=device-width, initial-scale=1" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.googleapis.com" }),
 		raw.link({ rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: true }),
@@ -41,4 +42,22 @@ function doc(path: string, title: string, ...params: Straw.PageParam[])
 			...params
 		)
 	);
+}
+
+/** */
+function title(content: string)
+{
+	return [
+		raw.meta({ name: "title", content }),
+		raw.meta({ name: "og:title" , content }),
+	]
+}
+
+/** */
+function description(content: string)
+{
+	return [
+		raw.meta({ name: "description", content }),
+		raw.meta({ name: "og:description" , content }),
+	]
 }

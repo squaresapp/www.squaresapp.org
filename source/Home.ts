@@ -1,6 +1,9 @@
 
 page("/", "Squares: Programmable Social Media",
+
 	raw.meta({ name: "og:image", content: "https://www.squaresapp.org/static/res.ogimage.jpg" }),
+	description("Squares: Capture the energy of social, the freedom of email, and the power of a website in one app."),
+	
 	raw.div(
 		raw.h1(
 			{
@@ -40,7 +43,7 @@ page("/", "Squares: Programmable Social Media",
 		space(100),
 		raw.get(loud(4, 58)`
 			Capture the ${red`energy`} of social,
-			the ${blue`independence`} of email,${br()}
+			the ${blue`freedom`} of email,${br()}
 			and the ${red`power`} of a website,${br()}
 			in ${blue`one`} channel.
 		`)({ 

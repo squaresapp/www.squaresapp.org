@@ -5,58 +5,89 @@ function footer()
 	return [
 		raw.section(
 			"footer",
+			
 			raw.div(
-				"content",
-				raw.img("office", { src: "res.office" }),
-				raw.h2(raw.text("Contact")),
-				raw.p(
+				{
+					display: "flex",
+					justifyContent: "space-between",
+				},
+				raw.div(
+					raw.h2(raw.text("Contact")),
+					
 					raw.a({ id: "footer-email-link", href: "#" }),
 					Fn.maskEmail("footer-email-link", "hello@squaresapp.org"),
+					
 					raw.br(),
-					raw.a({ href: "tel:1-289-455-8099" },raw.text("+1 (289) 455-8099")),
+					
+					raw.a({ href: "https://www.x.com/heropaulg" }),
+					raw.span(t`(${a("Twitter", "https://www.x.com/heropaulg")} DMs are open)`)
 				),
-				raw.br(),
-				raw.br(),
-				
-				raw.h2(raw.text("Address")),
-				raw.p(
-					raw.text("795 Canboro Rd."),
-					raw.br(),
-					raw.text("Fenwick, ON L0S 1C0"),
-					raw.br(),
-					raw.text("Canada"),
-					raw.br(),
-					raw.a({ href: "https://www.google.com/maps/place/795+Canboro+Rd,+Fenwick,+ON+L0S+1C0/@43.0249732,-79.3605794,20z/data=!4m6!3m5!1s0x89d34adf0af95141:0xd77996d835fadb50!8m2!3d43.0250445!4d-79.3607899!16s%2Fg%2F11cncmvs03?entry=ttu" },
-						raw.text("(map)")
-					)
-				),
-				raw.div("bottom",
-					raw.p("social",
-						raw.a(
-							{ href: "https://www.twitter.com/thesquaresapp" },
-							raw.img({ src: "res.social-twitter", title: "Twitter" })
-						),
-						raw.a(
-							{ href: "https://github.com/squaresapp/squares" },
-							raw.img({ src: "res.social-github", title: "GitHub" })
-						),
-						raw.a(
-							{ href: "https://www.linkedin.com/company/squaresapp/" },
-							raw.img({ src: "res.social-linkedin", title: "LinkedIn" })
-						),
-						raw.a(
-							{ href: "https://www.instagram.com/thesquaresapp" },
-							raw.img({ src: "res.social-instagram", title: "Instagram" })
-						),
-					),
-					raw.p("blessing",
-						raw.text("Made with "),
-						red`&#10084;`,
-						raw.text(" in Canada"),
+				raw.div(
+					raw.h2(raw.text("Address")),
+					raw.p(
+						raw.text("795 Canboro Rd."),
 						raw.br(),
-						raw.a({ href: "/privacy/"}, raw.text("Privacy Policy"))
+						raw.text("Fenwick, ON L0S 1C0"),
+						raw.br(),
+						raw.text("Canada"),
+						raw.br(),
+						raw.a({ href: "https://www.google.com/maps/place/795+Canboro+Rd,+Fenwick,+ON+L0S+1C0/@43.0249732,-79.3605794,20z/data=!4m6!3m5!1s0x89d34adf0af95141:0xd77996d835fadb50!8m2!3d43.0250445!4d-79.3607899!16s%2Fg%2F11cncmvs03?entry=ttu" },
+							raw.text("(map)")
+						)
 					),
 				),
+				raw.div(
+					raw.h2(raw.text("Projects")),
+					a("Squares", "/"),
+					raw.br(),
+					a("Webfeeds", "/webfeeds"),
+					raw.br(),
+					a("StrawJS", "/strawjs"),
+					raw.br(),
+					a("RawJS", "/rawjs"),
+				),
+			),
+			
+			raw.div(
+				{
+					display: "flex",
+					justifyContent: "space-between",
+					alignItems: "center",
+					padding: "50px 0",
+				},
+				raw.p("social",
+					raw.a(
+						{ href: "https://www.x.com/heropaulg" },
+						raw.img({ src: "res.social-twitter", title: "Twitter" })
+					),
+					raw.a(
+						{ href: "https://github.com/squaresapp/squares" },
+						raw.img({ src: "res.social-github", title: "GitHub" })
+					),
+					raw.a(
+						{ href: "https://www.linkedin.com/company/squaresapp/" },
+						raw.img({ src: "res.social-linkedin", title: "LinkedIn" })
+					),
+					raw.a(
+						{ href: "https://www.instagram.com/thesquaresapp" },
+						raw.img({ src: "res.social-instagram", title: "Instagram" })
+					),
+				),
+				raw.p(
+					{
+						textAlign: "center",
+					},
+					t`This website is ${b`MIT licensed`}.${br()}
+					It was generated with ${a("StrawJS", "/strawjs")}.${br()}
+					This website repository is ${a("here", "https://github.com/squaresapp/strawjs")}.
+				`),
+			),
+			raw.div(
+				{
+					textAlign: "right",
+					opacity: 0.5
+				},
+				a("Privacy Policy", "/privacy/")
 			)
 		)
 	]
@@ -68,6 +99,8 @@ css.push(
 		overflow: "hidden",
 		fontSize: "20px",
 		lineHeight: 1.66,
+		paddingTop: "20vw",
+		paddingBottom: "100px",
 	},
 	".footer:before", {
 		content: `""`,
@@ -90,36 +123,24 @@ css.push(
 	".footer H2", {
 		color: blueColor,
 		textTransform: "uppercase",
-		fontWeight: 700
+		fontWeight: 700,
+		paddingBottom: "10px",
 	},
 	".footer > DIV", {
-		paddingTop: "25vw",
 		margin: "auto",
 		maxWidth: "800px",
-	},
-	".footer IMG.office", {
-		maxWidth: "500px",
-		float: "right",
-		zIndex: 1,
-		borderRadius: "6px",
-		boxShadow: "0 5px 7px rgba(0, 0, 0, 0.4)",
-	},
-	".footer .bottom", {
-		display: "flex",
-		clear: "both",
-		padding: "10px 0 50px",
 	},
 	".footer .bottom > *", {
 		flex: "1 0",
 	},
-	".footer .blessing", {
-		textAlign: "right",
-	},
-	".footer .social", {
-		paddingTop: "100px",
+	".footer .social A", {
+		width: "50px",
+		display: "inline-block",
 	},
 	".footer .social IMG", {
-		width: "50px",
-		marginRight: "20px",
+		width: "100%"
+	},
+	".footer .social A + A", {
+		marginLeft: "25px",
 	}
 );

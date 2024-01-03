@@ -110,7 +110,7 @@ page("/rawjs", "RawJS: Make document.createElement() Great Again",
 			`,
 			space(50),
 			Fn.quoteBubble`
-				How do we reduce ${red`unexpectged behavior`}?
+				How do we reduce ${red`unexpected behavior`}?
 			`,
 			space(50),
 			Fn.quoteBubble`

@@ -53,8 +53,8 @@ page("/", "Squares: Programmable Social Media",
 		
 		prose(23)`
 			${b`Squares`} is an ${b`open-source`} app for consuming
-			Webfeeds, a radical open media format that's
-			ready to reshape the ${b`future internet`}.
+			Webfeeds, a radical open media format that fixes
+			many problems with ${b`today's internet`}.
 		`,
 		space(70),
 		button.ios(),

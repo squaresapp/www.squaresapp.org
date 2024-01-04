@@ -128,7 +128,7 @@ page("/", "Squares: Programmable Social Media",
 			We need a new
 			${blue`media channel`}
 			where you can
-			${blue`have`} you ${blue`cake`}
+			${blue`have`} your ${blue`cake`}
 			and ${red`eat`} it ${red`too`}.
 		`,
 		space(500)
@@ -167,12 +167,12 @@ page("/", "Squares: Programmable Social Media",
 	raw.section(
 		align.left,
 		loud(7)`
-			Webfeed ${blue`pages`} are ${blue`carousels`} build with the
+			Webfeed ${blue`pages`} are ${blue`carousels`} built with the
 			${blue`native language`} of the web: ${red`HTML`} and ${red`CSS`}.
 		`,
 		space(50),
 		prose(24)`
-			This means they can contain any time of thing
+			This means they can contain any type of thing
 			you've ever seen online: ${b`podcast players`}, 
 			${b`shopping carts`}, even ${b`interactive games`}.
 		`,
@@ -192,7 +192,7 @@ page("/", "Squares: Programmable Social Media",
 		loud(6, 75)`Pay-to-reshare is a ${red`cheat code`} to ${blue`exploding`} on social media.`,
 		space(150),
 		prose(37)`
-			The ${b`fastest way`} to ${b`grow on Twitter`} (and others) is to create good content, and then pay bigger accounts for reshares. Platforms ${b`hate this`}. They want you to buy their ads. But webfeeds are an ${b`escape hatch`} from ${b`ad-peddling overlords`}. So go after those resharing deals with fellow webfeeders, and ${b`grow`} your ${b`webfeed following`} to your hearts content. 
+			The ${b`fastest way`} to ${b`grow on Twitter`} (and other platforms) is to create good content, and then pay bigger accounts for reshares. Platforms ${b`hate this`}. They want you to buy their ads. But webfeeds are an ${b`escape hatch`} from ${b`ad-peddling overlords`}. So go after those resharing deals with fellow webfeeders, and ${b`grow`} your ${b`webfeed following`} to your hearts content. 
 		`,
 		space(100),
 		button.blue("Watch a growth expert discuss this.", "https://www.youtube.com/watch?v=eBNMhkDrxcY"),

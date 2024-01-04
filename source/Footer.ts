@@ -20,7 +20,6 @@ function footer()
 					raw.br(),
 					
 					raw.a({ href: "https://www.x.com/heropaulg" }),
-					raw.span(t`(${a("Twitter", "https://www.x.com/heropaulg")} DMs are open)`)
 				),
 				raw.div(
 					raw.h2(raw.text("Address")),

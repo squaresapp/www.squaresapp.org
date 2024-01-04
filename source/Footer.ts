@@ -79,7 +79,7 @@ function footer()
 					},
 					t`This website is ${b`MIT licensed`}.${br()}
 					It was generated with ${a("StrawJS", "/strawjs")}.${br()}
-					This website repository is ${a("here", "https://github.com/squaresapp/strawjs")}.
+					This website repository is ${a("here", "https://github.com/squaresapp/www.squaresapp.org")}.
 				`),
 			),
 			raw.div(

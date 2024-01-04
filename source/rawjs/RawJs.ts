@@ -78,7 +78,7 @@ page("/rawjs", "RawJS: Make document.createElement() Great Again",
 		space(100),
 		button.blue(
 			"Check out Squares.", 
-			"https://github.com/squaresapp/rawjs-sample"),
+			"https://www.squaresapp.org/"),
 		
 		space(200),
 	),

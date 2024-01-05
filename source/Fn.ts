@@ -32,8 +32,8 @@ namespace Fn
 			aspectRatio: "1/2",
 			width: "fit-content",
 			margin: "80px auto",
-			padding: "20px",
-			borderRadius: "70px",
+			padding: "1.5vw",
+			borderRadius: "4.4vw",
 			backgroundColor: "black",
 			boxShadow: 
 				`0 10px 50px rgba(0, 0, 0, 1),
@@ -47,13 +47,13 @@ namespace Fn
 			right: 0,
 			bottom: "25px",
 			margin: "auto",
-			width: "155px",
+			width: "50%",
 			height: "5px",
 			borderRadius: "10px",
 			backgroundColor: "hsl(180, 0%, 30%)",
 		},
 		".iphone-wrapper > :first-child", {
-			borderRadius: "50px",
+			borderRadius: "3vw",
 		}
 	);
 	

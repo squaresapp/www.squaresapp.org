@@ -6,13 +6,24 @@ page("/", "Squares: Programmable Social Media",
 	
 	raw.div(
 		{
-			backgroundColor: "#666",
+			backgroundColor: "#555",
 			textAlign: "center",
 			padding: "23px",
-			fontSize: "30px",
-			fontWeight: 600
 		},
-		raw.text("Website under construction.")
+		raw.p(
+			{
+				fontSize: "30px",
+				fontWeight: 600,
+				padding: "10px",
+			},
+			raw.text("Website under construction.")
+		),
+		raw.p(
+			{
+				fontSize: "20px",
+			},
+			raw.text("Squares is still in private beta. Please check back later."),
+		),
 	),
 	
 	section(

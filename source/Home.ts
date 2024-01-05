@@ -8,7 +8,7 @@ page("/", "Squares: Programmable Social Media",
 		{
 			backgroundColor: "#666",
 			textAlign: "center",
-			padding: "40px",
+			padding: "23px",
 			fontSize: "30px",
 			fontWeight: 600
 		},

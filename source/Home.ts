@@ -1,12 +1,12 @@
 
 page("/", "Squares: Programmable Social Media",
-
+	
 	raw.meta({ name: "og:image", content: "https://www.squaresapp.org/static/res.ogimage.jpg" }),
 	description("Squares: The energy of social, the freedom of email, and the power of a website in one app."),
 	
 	raw.div(
 		{
-			backgroundColor: "#555",
+			backgroundColor: "hsl(212, 15%, 33%)",
 			textAlign: "center",
 			padding: "23px",
 		},
@@ -29,8 +29,19 @@ page("/", "Squares: Programmable Social Media",
 	section(
 		{
 			overflow: "hidden",
-			background: "radial-gradient(50% 300px, #3B3B3B, black)",
 		},
+		raw.css(":before", {
+			content: `""`,
+			position: "absolute",
+			zIndex: -1,
+			top: 0,
+			left: 0,
+			right: 0,
+			bottom: 0,
+			backgroundImage: `url(res.glow)`,
+			backgroundSize: "200% 200%",
+			backgroundPosition: "50% 110%",
+		}),
 		raw.img({
 			src: "res.logo.svg",
 			display: "block",
@@ -41,23 +52,24 @@ page("/", "Squares: Programmable Social Media",
 				fontSize: "5vw",
 				textTransform: "uppercase",
 				marginBottom: "50px",
+				textShadow: "0px 5px 15px black",
 			},
 			raw.text("Squares")
 		),
 		raw.get(loud(4, 58)`
-			The ${red`energy`} of social.${br()}
+			The ${red`flow`} of social.${br()}
 			The ${blue`freedom`} of email.${br()}
 			The ${red`power`} of a website.${br()}
 			In ${blue`one`} app.
 		`)({ 
-			textShadow: "5px 5px 5px black",
+			textShadow: "0px 5px 15px black",
 		}),
 		space(50),
 		
 		prose(17)`
 			${b`Squares`} is an ${b`open-source`} app
-			for consuming ${b`Webfeeds`}, a radical
-			open media format that fixes many
+			for consuming ${b`Webfeeds`}, an open
+			media format that fixes many
 			problems with ${b`today's internet`}.
 		`,
 		space(70),

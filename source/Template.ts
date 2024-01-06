@@ -15,6 +15,8 @@ function page(path: string, titleText: string, ...params: Straw.PageParam[])
 		raw.link({ rel: "stylesheet", type: "text/css", href: "/static/prism.css" }),
 		raw.style(...css),
 		
+		straw.icon("res.icon"),
+		
 		raw.script({
 			src: "https://cdn.counter.dev/script.js",
 			data: { id: "a7871322-aef0-45c0-8e10-9b636242c2dc", utcoffset: -5 }

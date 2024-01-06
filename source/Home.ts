@@ -152,9 +152,9 @@ page("/", "Squares: Programmable Social Media",
 			Freedom to ${blue`do anything`} 🌈. But it's${br()}
 			${red`super hard`} to get people to ${red`visit`} 😢.
 		`,
-		space(300),
+		space(100),
 		dots(),
-		space(300)
+		space(100)
 	),
 	
 	section(
@@ -173,45 +173,62 @@ page("/", "Squares: Programmable Social Media",
 		dots()
 	),
 	
-	section(
-		loud(7, 80)`
-			${blue`Webfeeds`} are just ${blue`web pages`} that ${blue`push`}
-			to your audience ${blue`automatically`}.
-		`,
-		dots()
-	),
-	
 	raw.section(
-		loud(7, 80)`
-			${blue`Webfeeds`} come to followers via an app.
-			Like ${red`Squares`}.
-		`,
-		space(800)
-	),
-	
-	raw.section(
-		align.right,
-		loud(7, 60)`
-			${red`Squares`} folds ${blue`webfeeds`} into a visual ${blue`timeline`}.
-		`,
-		space(800),
-		dots(),
-	),
-	
-	raw.section(
-		align.left,
 		loud(7)`
-			Webfeed ${blue`pages`} are ${blue`carousels`} built with the
-			${blue`native language`} of the web: ${red`HTML`} and ${red`CSS`}.
+			Webfeeds are a ${blue`stream`} of ${blue`carousels`} built with the
+			language of the web: ${red`HTML`} and ${red`CSS`}.
 		`,
 		space(50),
 		prose(24)`
-			This means they can contain any type of thing
-			you've ever seen online: ${b`podcast players`}, 
-			${b`shopping carts`}, even ${b`interactive games`}.
+			This means that many people already know how to make them. And they can contain any type of thing
+			you've ever seen online: ${b`podcast players`}, ${b`shopping carts`}, even ${b`interactive games`}.
+		`,
+		Fn.iPhone(
+			raw.img(
+				{
+					src: "res.hero.webfeed",
+					width: "35vw",
+				}
+			)
+		),
+		dots()
+	),
+	
+	
+	section(
+		loud(7, 65)`
+			${blue`Webfeeds`}: Web pages that ${blue`push`}
+			to your ${blue`following`}.
+		`,
+		space(60),
+		prose(27)`
+			As a creator, your webfeeds live on ${b`your own website`}. Carousels go directly from your website to your followers device. There's ${b`no platform in the middle`} distributing them to your followers on your behalf.
 		`,
 		dots()
 	),
+	
+	
+	section(
+		loud(7, 80)`
+			${red`Squares`} is an app for followers that opens 
+			${blue`portals`} into ${blue`webfeeds`}.
+		`,
+		space(50),
+		prose(25)`
+			Encourage your followers to download a webfeed reader app like Squares. This way, when you post a new carousel, a ${b`new portal will open automatically`} on their device that displays it.
+		`,
+		Fn.iPhone(
+			raw.img(
+				{
+					src: "res.hero.webfeed",
+					width: "35vw",
+				}
+			)
+		),
+		dots(),
+	),
+	
+	
 	
 	section(
 		loud(10)`Designed to be ${blue`reshared`}.`,
@@ -241,7 +258,7 @@ page("/", "Squares: Programmable Social Media",
 		`,
 		space(100),
 		raw.div(
-			align.left,
+			align.center,
 			loud(4, 65)`
 				Are you an ${blue`algorithm developer`}?
 				There is big ${red`profit potential`} in ${br()}

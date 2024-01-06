@@ -45,7 +45,7 @@ page("/", "Squares: Programmable Social Media",
 		raw.img({
 			src: "res.logo.svg",
 			display: "block",
-			marginBottom: "-3%"
+			marginBottom: "-5%"
 		}),
 		raw.h1(
 			{

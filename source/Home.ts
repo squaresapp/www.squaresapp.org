@@ -53,7 +53,7 @@ page("/", "Squares: Programmable Social Media",
 				fontSize: "5vw",
 				textTransform: "uppercase",
 				marginBottom: "50px",
-				textShadow: "0px 5px 15px black",
+				textShadow: "0px 5px 20px rgba(0, 0, 0, 0.75)",
 			},
 			raw.text("Squares")
 		),
@@ -63,7 +63,7 @@ page("/", "Squares: Programmable Social Media",
 			The ${red`power`} of a website.${br()}
 			In ${blue`one`} app.
 		`)({ 
-			textShadow: "0px 5px 15px black",
+			textShadow: "0px 5px 10px rgba(0, 0, 0, 0.5)",
 		}),
 		space(50),
 		

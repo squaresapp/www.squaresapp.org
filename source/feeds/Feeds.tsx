@@ -65,7 +65,7 @@
 		}
 	);
 	
-	page("/webfeeds-list", "Sample Webfeeds",
+	page("/feeds", "Sample Webfeeds",
 		section(
 			space(100),
 			loud(8)`Webfeed Samples`,

@@ -27,10 +27,17 @@
 				<img src={ wf.poster } />
 				<div class="image-title">{ wf.name }</div>
 			</div>
-			{ button.blue("Follow", wf.url) }
+			{ renderFollowButton(wf.url) }
 		</div>;
 		
 		return out;
+	}
+	
+	function renderFollowButton(url: string)
+	{
+		const btn = button.blue("Follow", "#");
+		btn.setAttribute("data-webfeed-href", url);
+		return btn;
 	}
 	
 	css.push(
@@ -67,6 +74,7 @@
 	
 	page("/feeds", "Sample Webfeeds",
 		section(
+			straw.script("https://cdn.jsdelivr.net/npm/webfeed-follow/min.js"),
 			space(100),
 			loud(8)`Webfeed Samples`,
 			prose(30)`

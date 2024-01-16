@@ -121,6 +121,27 @@ css.push(
 );
 
 /** */
+function unordered(...items: string[]): void;
+function unordered(boxWidth: number, ...items: string[]): void;
+function unordered(...args: any[])
+{
+	const boxWidth = typeof args[0] === "number" ? args.shift() : undefined;
+	const items = args.slice(1);
+	return raw.ul(
+		"prose unordered",
+		!!boxWidth && { maxWidth: boxWidth + "em" },
+		items.map(item => raw.li(raw.text(item)))
+	);
+}
+
+css.push(
+	".unordered", {
+		textAlign: "left",
+		paddingLeft: "1em",
+	}
+);
+
+/** */
 function section(...params: Raw.Param<Raw.ElementAttribute>[]): HTMLElement
 {
 	return raw.section(align.center, ...params)
@@ -340,3 +361,42 @@ function githubCorner(url: string)
 	children.map(c => c.remove());
 	return children;
 }
+
+
+/*
+This code is commented for now.
+Once we make the transition to LinkeDOM,
+we can start using custom elements.
+
+declare namespace JSX
+{
+	interface IntrinsicElements
+	{
+		loud: E<LoudElementAttribute>;
+	}
+}
+
+interface LoudElementAttribute extends Raw.ElementAttribute
+{
+	size: number;
+	width: number;
+}
+
+class LoudElement extends HTMLElement
+{
+	set size(value: number)
+	{
+		this.style.fontSize = value + "vw";
+	}
+	
+	set width(value: number)
+	{
+		this.style.maxWidth = value + "vw";
+	}
+	
+	readonly nodeName = "DIV";
+	readonly tagName = "DIV";
+}
+
+raw.define("loud", LoudElement);
+*/

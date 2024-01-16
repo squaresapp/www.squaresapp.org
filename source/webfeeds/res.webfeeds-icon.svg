@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="356px" height="357px" viewBox="0 0 356 357" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Hero" transform="translate(-301.000000, -81.000000)">
+            <g id="Icon" transform="translate(479.000000, 259.500000) rotate(-45.000000) translate(-479.000000, -259.500000) translate(354.000000, 133.000000)">
+                <polygon id="3" fill="#00A0FF" points="200 -3.19385366e-13 250 -3.10760321e-13 250 253 3.58251378e-14 253 3.58251378e-14 203 200 203"></polygon>
+                <polygon id="2" fill="#FF003C" points="125 -3.19385366e-13 175 -3.10760321e-13 175 175 4.07612244e-14 175 5.2557344e-14 125 125 125"></polygon>
+                <polygon id="1" fill="#FFFFFF" points="47.5718075 0.281439558 100.046681 4.31643919e-12 100.046681 100.046681 2.52556838e-12 100.046681 0.195653121 53.3144481 47.5718075 52.6073414"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
